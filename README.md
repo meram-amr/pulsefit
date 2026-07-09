@@ -36,6 +36,10 @@ PulseFIT/
 ## How to Use
 
 1. Clone the repository:
-git clone https://github.com/your-username/pulsefit.git
+git clone https://github.com/meram-amr/pulsefit.git
 
 2. Open index.html in your browser
+
+## Live Demo
+
+https://meram-amr.github.io/pulsefit/
