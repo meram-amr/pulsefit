@@ -818,7 +818,7 @@ nav button.btn:hover {
 }
 
 
-.footer .container .links span {
+.footer .container .links a {
     padding: 0.5rem 1rem;
     cursor: pointer;
     font-family: "Google Sans", sans-serif;
@@ -826,9 +826,11 @@ nav button.btn:hover {
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "GRAD" 0;
+    color: var(--text-primary);
+    text-decoration: none;
 }
 
-.footer .container .links span:hover {
+.footer .container .links a:hover {
     color: var(--accent-sage-hover);
     transform: scale(1.1);
     transition: all 0.5s ease-in-out;
