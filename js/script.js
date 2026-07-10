@@ -12,14 +12,28 @@ hamburger.addEventListener('click', function () {
 
 const btn = document.getElementById("dark_mode");
 
+window.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.documentElement.setAttribute("data-theme", "dark");
+        btn.classList.remove("fa-moon");
+        btn.classList.add("fa-sun");
+    }
+});
+
 btn.addEventListener("click", () => {
     if (document.documentElement.getAttribute("data-theme") === "dark") {
         document.documentElement.removeAttribute("data-theme");
         btn.classList.remove("fa-sun");
         btn.classList.add("fa-moon");
+
+        localStorage.setItem("theme", "light");
     } else {
         document.documentElement.setAttribute("data-theme", "dark");
         btn.classList.remove("fa-moon");
         btn.classList.add("fa-sun");
+
+        localStorage.setItem("theme", "dark");
     }
 });
